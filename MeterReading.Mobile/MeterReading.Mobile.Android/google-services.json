@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1061433192739",
+    "firebase_url": "https://meterreading-mobile-android.firebaseio.com",
+    "project_id": "meterreading-mobile-android",
+    "storage_bucket": "meterreading-mobile-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061433192739:android:9942cd3a28c1147c",
+        "android_client_info": {
+          "package_name": "MeterReading.Mobile.Android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061433192739-3mldo7pjio58fee2nd39kj9i8arkgof5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyTp16inii7wPO9zFVBrVvQuej7AeLuyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061433192739-3mldo7pjio58fee2nd39kj9i8arkgof5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

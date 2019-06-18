@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReading.Mobile.Android", "MeterReading.Mobile\MeterReading.Mobile.Android\MeterReading.Mobile.Android.csproj", "{68A90936-0506-453A-887F-7633E5B78061}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReading.Mobile", "MeterReading.Mobile\MeterReading.Mobile\MeterReading.Mobile.csproj", "{AABB8B35-EABB-4342-A41A-415174A5BB40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReading.Core", "MeterReading.Core\MeterReading.Core.csproj", "{9648FE44-6B32-4E5F-8012-B01164532B05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReading.Data.SQLite", "MeterReading.Data.SQLite\MeterReading.Data.SQLite.csproj", "{631386AA-9E93-4F88-8B80-B7A2B06356D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReading.Services.MeterReadingAPI", "MeterReading.Services.MeterReadingAPI\MeterReading.Services.MeterReadingAPI.csproj", "{A1A8F15E-DBC3-4D20-B8E8-7ECB6FD895B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReading.Presentation", "MeterReading.Presentation\MeterReading.Presentation.csproj", "{8E82F7C2-DB78-49F0-9D64-25B40D01B7AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68A90936-0506-453A-887F-7633E5B78061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A90936-0506-453A-887F-7633E5B78061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A90936-0506-453A-887F-7633E5B78061}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{68A90936-0506-453A-887F-7633E5B78061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A90936-0506-453A-887F-7633E5B78061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A90936-0506-453A-887F-7633E5B78061}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AABB8B35-EABB-4342-A41A-415174A5BB40}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9648FE44-6B32-4E5F-8012-B01164532B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9648FE44-6B32-4E5F-8012-B01164532B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9648FE44-6B32-4E5F-8012-B01164532B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9648FE44-6B32-4E5F-8012-B01164532B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631386AA-9E93-4F88-8B80-B7A2B06356D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631386AA-9E93-4F88-8B80-B7A2B06356D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631386AA-9E93-4F88-8B80-B7A2B06356D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631386AA-9E93-4F88-8B80-B7A2B06356D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A8F15E-DBC3-4D20-B8E8-7ECB6FD895B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A8F15E-DBC3-4D20-B8E8-7ECB6FD895B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A8F15E-DBC3-4D20-B8E8-7ECB6FD895B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A8F15E-DBC3-4D20-B8E8-7ECB6FD895B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E82F7C2-DB78-49F0-9D64-25B40D01B7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E82F7C2-DB78-49F0-9D64-25B40D01B7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E82F7C2-DB78-49F0-9D64-25B40D01B7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E82F7C2-DB78-49F0-9D64-25B40D01B7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B95EBA6-0F8D-464B-A3AA-B1677E5F5687}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeterReading.Mobile.Controls.CustomListView"
+             x:Name="this">
+    <ContentView.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+              Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <StackLayout>
+            <ListView Margin="{StaticResource PageMargin}"
+                      ItemsSource="{Binding Entries, Source={x:Reference this}}"
+                      SelectedItem="{Binding SelectedEntry, Source={x:Reference this}}"
+                      ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding MeterId, StringFormat='Meter ID: {0}'}"
+                                  Detail="{Binding Reading, StringFormat='Current Reading: {0}'}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

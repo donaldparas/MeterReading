@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviorsPack="clr-namespace:Xamarin.Forms.BehaviorsPack;assembly=Xamarin.Forms.BehaviorsPack"
+             xmlns:viewModels="clr-namespace:MeterReading.Mobile.ViewModels.MeterReading"
+             xmlns:controls="clr-namespace:MeterReading.Mobile.Controls"
+             x:Class="MeterReading.Mobile.Views.MeterReadingListPage"
+             Title="Meter Reading">
+    <ContentPage.Resources>
+        <viewModels:MeterReadingListViewModel x:Key="ViewModel" />
+
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+              Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <viewModels:MeterReadingListViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Behaviors>
+        <behaviorsPack:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="{StaticResource PageMargin}">
+        <!--<ListView Margin="{StaticResource PageMargin}"
+                  ItemsSource="{Binding EntriesCollection}"
+                  SelectedItem="{Binding SelectedEntry}">
+            <ListView.Behaviors>
+                <behaviorsPack:SelectedItemBehavior Command="{Binding SelectedEntryCommand}"/>
+            </ListView.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding MeterId, StringFormat='Meter ID: {0}'}"
+                              Detail="{Binding Reading, StringFormat='Current Reading: {0}'}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <controls:CustomListView Entries="{Binding EntriesCollection}" SelectedEntry="{Binding SelectedEntry}" ItemSelectedCommand="{Binding SelectedEntryCommand}" />
+        <Button Margin="0,10,0,0" Text="Post"
+                Command="{Binding PostEntriesCommand}"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White" />
+    </StackLayout>
+</ContentPage>
